@@ -29,6 +29,15 @@
 </td>
 </tr>
 <tr>
+    <td>Marital Status:</td>
+    <td>
+        <select name="marital_status" id="marital_status">
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+        </select>
+    </td>
+</tr>
+<tr>
 <td>Language Known:</td>
 <td>
 <input type="checkbox" name="lang">English
