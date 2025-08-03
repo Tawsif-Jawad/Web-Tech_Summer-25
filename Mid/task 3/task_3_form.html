@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation Form</title>
+
+    <link rel="stylesheet" href="css/task_3_style.css" />
+    <script src=""></script>
+  </head>
+  <body>
+    <h1>Donor Information</h1>
+
+    <form>
+      <!-- Donor Information Section -->
+      <fieldset>
+        <div>
+          <label for="first-name">First Name</label><br />
+          <input type="text" id="first-name" name="first-name" size="50" />
+        </div>
+
+        <div>
+          <label for="last-name">Last Name</label><br />
+          <input type="text" id="last-name" name="last-name" size="50" />
+        </div>
+
+        <div>
+          <label for="address">Address</label><br />
+          <input type="text" id="address" name="address" size="50" />
+        </div>
+        <div>
+          <label for="city">City</label><br />
+          <input type="text" id="city" name="city" size="50" />
+        </div>
+
+        <div>
+          <label for="state">State</label><br />
+          <select id="state" name="state">
+            <option value="">Select a State</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Barisal">Barisal</option>
+            <option value="Rangpur">Rangpur</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="phone">Phone</label><br />
+          <input type="tel" id="phone" name="phone" size="50" />
+        </div>
+
+        <div>
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" size="50" />
+        </div>
+
+        <div>
+          <label for="password">Create Password (min 8 characters)</label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            size="50"
+          />
+        </div>
+
+        <div>
+          <label for="confirm-password">Confirm Password</label><br />
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            size="50"
+          />
+        </div>
+
+        <div>
+          <strong>Donation Amount</strong><br />
+          <input
+            type="radio"
+            id="donation-none"
+            name="donation-amount"
+            value="none"
+          />
+          <label for="donation-none">None</label>
+          <input
+            type="radio"
+            id="donation-500"
+            name="donation-amount"
+            value="500"
+          />
+          <label for="donation-500">500 BDT</label>
+          <input
+            type="radio"
+            id="donation-1000"
+            name="donation-amount"
+            value="1000"
+          />
+          <label for="donation-1000">1000 BDT</label>
+          <input
+            type="radio"
+            id="donation-2000"
+            name="donation-amount"
+            value="2000"
+          />
+          <label for="donation-2000">2000 BDT</label>
+          <input
+            type="radio"
+            id="donation-3000"
+            name="donation-amount"
+            value="3000"
+          />
+          <label for="donation-3000">3000 BDT</label>
+          <input
+            type="radio"
+            id="donation-other"
+            name="donation-amount"
+            value="other"
+          />
+          <label for="donation-other">Other</label>
+        </div>
+
+        <div>
+          <label for="other-amount">Other Amount</label><br />
+          <input type="text" id="other-amount" name="other-amount" size="50" />
+        </div>
+
+        <div>
+          <input type="checkbox" id="regular-basis" name="regular-basis" />
+          <label for="regular-basis"
+            >I am interested in giving on a regular basis.</label
+          >
+        </div>
+      </fieldset>
+
+      <!-- Additional Information Section -->
+      <fieldset>
+        <h2>Additional Information</h2>
+
+        <div>
+          <input type="checkbox" id="anonymous" name="anonymous" />
+          <label for="anonymous"
+            >I would like my gift to remain anonymous.</label
+          >
+        </div>
+
+        <p>
+          <input type="checkbox" id="matching-gift" name="matching-gift" />
+          <label for="matching-gift"
+            >My employer offers a matching gift program.</label
+          >
+        </p>
+
+        <p>
+          <input type="checkbox" id="no-thank-you" name="no-thank-you" />
+          <label for="no-thank-you"
+            >Please don't send a thank you letter.</label
+          >
+        </p>
+
+        <div>
+          <label for="comments">Comments</label><br />
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </div>
+      </fieldset>
+
+      <!-- Form Buttons -->
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
